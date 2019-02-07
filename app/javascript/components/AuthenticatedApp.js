@@ -7,6 +7,7 @@ import {
 } from 'react-router-dom'
 
 import Dvds from './pages/Dvds'
+import NewDvd from './pages/NewDvd'
 
 class AuthenticatedApp extends React.Component {
   render () {
@@ -14,7 +15,7 @@ class AuthenticatedApp extends React.Component {
       <Router>
         <div>
           <Switch>
-
+            <Route path="/new-dvd" component={NewDvd} />
             <Route path="/dvds" component={Dvds} />
           </Switch>
         </div>
